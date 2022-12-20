@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B03FFE0B2951C7200089EF7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03FFE0A2951C7200089EF7F /* Main.storyboard */; };
+		B03FFE0D2951C7350089EF7F /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FFE0C2951C7350089EF7F /* GCDViewController.swift */; };
+		B03FFE0F2951FBD40089EF7F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FFE0E2951FBD40089EF7F /* Helper.swift */; };
+		B03FFE122952050C0089EF7F /* spinnergif.gif in Resources */ = {isa = PBXBuildFile; fileRef = B03FFE112952050C0089EF7F /* spinnergif.gif */; };
 		B0797D7A2951B2B300FE9934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0797D792951B2B300FE9934 /* AppDelegate.swift */; };
 		B0797D7C2951B2B300FE9934 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0797D7B2951B2B300FE9934 /* SceneDelegate.swift */; };
 		B0797D7E2951B2B300FE9934 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0797D7D2951B2B300FE9934 /* ViewController.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B03FFE0A2951C7200089EF7F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B03FFE0C2951C7350089EF7F /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
+		B03FFE0E2951FBD40089EF7F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		B03FFE112952050C0089EF7F /* spinnergif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spinnergif.gif; sourceTree = "<group>"; };
 		B0797D762951B2B300FE9934 /* swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0797D792951B2B300FE9934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0797D7B2951B2B300FE9934 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B03FFE092951C6B00089EF7F /* grand-central-dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				B03FFE0A2951C7200089EF7F /* Main.storyboard */,
+				B03FFE0C2951C7350089EF7F /* GCDViewController.swift */,
+				B03FFE0E2951FBD40089EF7F /* Helper.swift */,
+			);
+			path = "grand-central-dispatch";
+			sourceTree = "<group>";
+		};
+		B03FFE10295204F20089EF7F /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				B03FFE112952050C0089EF7F /* spinnergif.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
 		B0797D6D2951B2B300FE9934 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +125,8 @@
 		B0797D782951B2B300FE9934 /* swift */ = {
 			isa = PBXGroup;
 			children = (
+				B03FFE10295204F20089EF7F /* gif */,
+				B03FFE092951C6B00089EF7F /* grand-central-dispatch */,
 				B0797D792951B2B300FE9934 /* AppDelegate.swift */,
 				B0797D7B2951B2B300FE9934 /* SceneDelegate.swift */,
 				B0797D7D2951B2B300FE9934 /* ViewController.swift */,
@@ -234,6 +262,8 @@
 				B0797D862951B2B500FE9934 /* LaunchScreen.storyboard in Resources */,
 				B0797D832951B2B500FE9934 /* Assets.xcassets in Resources */,
 				B0797D812951B2B300FE9934 /* Main.storyboard in Resources */,
+				B03FFE122952050C0089EF7F /* spinnergif.gif in Resources */,
+				B03FFE0B2951C7200089EF7F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +290,9 @@
 			files = (
 				B0797D7E2951B2B300FE9934 /* ViewController.swift in Sources */,
 				B0797D7A2951B2B300FE9934 /* AppDelegate.swift in Sources */,
+				B03FFE0F2951FBD40089EF7F /* Helper.swift in Sources */,
 				B0797D7C2951B2B300FE9934 /* SceneDelegate.swift in Sources */,
+				B03FFE0D2951C7350089EF7F /* GCDViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
