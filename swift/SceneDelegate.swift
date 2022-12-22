@@ -22,9 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
 
-        let storyboard = UIStoryboard(name: "USMain", bundle: nil)
+        let storyboard = UIStoryboard(name: "CDMain", bundle: nil)
         
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "URLSessionViewController")
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "CoreDataViewController")
 
         window?.rootViewController = initialViewController
         window?.makeKeyAndVisible()

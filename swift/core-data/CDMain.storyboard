@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Core Data View Controller-->
+        <scene sceneID="UN2-Yt-GEh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U80-jW-6iX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="CoreDataViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zf8-Gb-54P" customClass="CoreDataViewController" customModule="swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0r-4a-j6U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dLo-YH-t76">
+                                <rect key="frame" x="0.0" y="44" width="414" height="500"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="m1s-SL-2xs"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="zf8-Gb-54P" id="b7E-f4-UCc"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcg-0A-Wzs">
+                                <rect key="frame" x="165.5" y="554" width="83.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Task"/>
+                                <connections>
+                                    <action selector="addNewTodo:" destination="zf8-Gb-54P" eventType="touchUpInside" id="Yr0-aJ-C4R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pin-3y-RK6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dLo-YH-t76" firstAttribute="leading" secondItem="pin-3y-RK6" secondAttribute="leading" id="BJ4-G3-tPg"/>
+                            <constraint firstItem="dLo-YH-t76" firstAttribute="top" secondItem="pin-3y-RK6" secondAttribute="top" id="GRH-9r-ux8"/>
+                            <constraint firstItem="rcg-0A-Wzs" firstAttribute="top" secondItem="dLo-YH-t76" secondAttribute="bottom" constant="10" id="jg1-ia-rZY"/>
+                            <constraint firstItem="pin-3y-RK6" firstAttribute="trailing" secondItem="dLo-YH-t76" secondAttribute="trailing" id="vxV-nH-6iA"/>
+                            <constraint firstItem="rcg-0A-Wzs" firstAttribute="centerX" secondItem="pin-3y-RK6" secondAttribute="centerX" id="z0y-qR-Pnm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="dLo-YH-t76" id="gKL-zf-FI8"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-219" y="-530"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
