@@ -22,9 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
 
-        let storyboard = UIStoryboard(name: "CDMain", bundle: nil)
+        let storyboard = UIStoryboard(name: "NMain", bundle: nil)
         
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "CoreDataViewController")
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "NotificationViewController")
 
         window?.rootViewController = initialViewController
         window?.makeKeyAndVisible()
