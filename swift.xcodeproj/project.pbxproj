@@ -26,6 +26,9 @@
 		B0797D912951B2B500FE9934 /* swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0797D902951B2B500FE9934 /* swiftTests.swift */; };
 		B0797D9B2951B2B500FE9934 /* swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0797D9A2951B2B500FE9934 /* swiftUITests.swift */; };
 		B0797D9D2951B2B500FE9934 /* swiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0797D9C2951B2B500FE9934 /* swiftUITestsLaunchTests.swift */; };
+		B0FB14052959E68A004FAA60 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB14042959E68A004FAA60 /* Pet.swift */; };
+		B0FB14082959E715004FAA60 /* MMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FB14072959E715004FAA60 /* MMain.storyboard */; };
+		B0FB140B2959E85F004FAA60 /* MViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FB140A2959E85F004FAA60 /* MViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		B0797D962951B2B500FE9934 /* swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0797D9A2951B2B500FE9934 /* swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUITests.swift; sourceTree = "<group>"; };
 		B0797D9C2951B2B500FE9934 /* swiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B0FB14042959E68A004FAA60 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		B0FB14072959E715004FAA60 /* MMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MMain.storyboard; sourceTree = "<group>"; };
+		B0FB140A2959E85F004FAA60 /* MViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 		B0797D782951B2B300FE9934 /* swift */ = {
 			isa = PBXGroup;
 			children = (
+				B0FB14022959E66F004FAA60 /* Mvvm */,
 				B03FFE282955D7140089EF7F /* Notification */,
 				B03FFE1A295482D30089EF7F /* core-data */,
 				B03FFE13295319FD0089EF7F /* url-session */,
@@ -195,6 +202,40 @@
 				B0797D9C2951B2B500FE9934 /* swiftUITestsLaunchTests.swift */,
 			);
 			path = swiftUITests;
+			sourceTree = "<group>";
+		};
+		B0FB14022959E66F004FAA60 /* Mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				B0FB14092959E84D004FAA60 /*  Controllers */,
+				B0FB14062959E708004FAA60 /* Views */,
+				B0FB14032959E676004FAA60 /* Model */,
+			);
+			path = Mvvm;
+			sourceTree = "<group>";
+		};
+		B0FB14032959E676004FAA60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0FB14042959E68A004FAA60 /* Pet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0FB14062959E708004FAA60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0FB14072959E715004FAA60 /* MMain.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0FB14092959E84D004FAA60 /*  Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0FB140A2959E85F004FAA60 /* MViewController.swift */,
+			);
+			path = " Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0797D862951B2B500FE9934 /* LaunchScreen.storyboard in Resources */,
+				B0FB14082959E715004FAA60 /* MMain.storyboard in Resources */,
 				B03FFE2E2955D9670089EF7F /* NMain.storyboard in Resources */,
 				B03FFE1529531CB50089EF7F /* USMain.storyboard in Resources */,
 				B03FFE1C295498B90089EF7F /* CDMain.storyboard in Resources */,
@@ -337,7 +379,9 @@
 				B03FFE1729531CC60089EF7F /* URLSessionViewController.swift in Sources */,
 				B03FFE1E295498C60089EF7F /* CoreDataViewController.swift in Sources */,
 				B03FFE192953250A0089EF7F /* CurrentPrice.swift in Sources */,
+				B0FB14052959E68A004FAA60 /* Pet.swift in Sources */,
 				B03FFE2B2955D89B0089EF7F /* NotificationViewController.swift in Sources */,
+				B0FB140B2959E85F004FAA60 /* MViewController.swift in Sources */,
 				B03FFE2329549AF70089EF7F /* TodoList.xcdatamodeld in Sources */,
 				B0797D7C2951B2B300FE9934 /* SceneDelegate.swift in Sources */,
 				B03FFE0D2951C7350089EF7F /* GCDViewController.swift in Sources */,
