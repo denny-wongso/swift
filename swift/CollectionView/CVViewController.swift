@@ -13,6 +13,7 @@ public class CVViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var playerOne: UILabel!
     @IBOutlet weak var playerTwo: UILabel!
+    @IBOutlet weak var message: UILabel!
     
     
     var isPlayerOne: Bool = true
@@ -39,6 +40,8 @@ public class CVViewController: UIViewController {
         game.append([0, 0, 0])
         game.append([0, 0, 0])
         game.append([0, 0, 0])
+        playerOne.textColor = isPlayerOne ? .red : .black
+        playerTwo.textColor = !isPlayerOne ? .red : .black
         collectionView.reloadData()
     }
     
@@ -52,6 +55,10 @@ public class CVViewController: UIViewController {
             start = 2
         }
         return (start, num % 3)
+    }
+    
+    public func isValid(_ row: Int, _ col: Int) -> Bool {
+        return game[row][col] == 0
     }
 }
 
@@ -93,6 +100,16 @@ extension CVViewController: UICollectionViewDataSource, UICollectionViewDelegate
 
         let rowAndCol = rowAndColumn(indexPath.row)
         
+        if !isValid(rowAndCol.0, rowAndCol.1) {
+            message.text = "Invalid moved! try again!"
+            message.textColor = .red
+            Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false, block: {[message](timer) in
+                message?.text = ""
+                message?.textColor = .black
+                timer.invalidate()
+            })
+            return
+        }
         game[rowAndCol.0][rowAndCol.1] = isPlayerOne ? 1 : 2
         isPlayerOne.toggle()
         playerOne.textColor = isPlayerOne ? .red : .black

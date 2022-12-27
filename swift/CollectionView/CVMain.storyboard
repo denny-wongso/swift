@@ -70,8 +70,14 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="XK6-9o-hpL"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COg-PD-1Yr">
+                                <rect key="frame" x="207" y="618" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZQ-OD-oqQ">
-                                <rect key="frame" x="171.5" y="694.5" width="71" height="31"/>
+                                <rect key="frame" x="171.5" y="673.5" width="71" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="ZFA-W1-NI6"/>
                                 </constraints>
@@ -85,14 +91,16 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="COg-PD-1Yr" firstAttribute="top" secondItem="xce-AQ-w6r" secondAttribute="bottom" constant="93.5" id="3me-LK-2g8"/>
                             <constraint firstItem="7i4-R4-Rv1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="4wT-Jg-SIq"/>
                             <constraint firstItem="xce-AQ-w6r" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Bgg-U6-jat"/>
                             <constraint firstItem="XTb-Zq-8HL" firstAttribute="height" secondItem="7i4-R4-Rv1" secondAttribute="height" id="Ick-ct-Lh5"/>
+                            <constraint firstItem="sZQ-OD-oqQ" firstAttribute="top" secondItem="COg-PD-1Yr" secondAttribute="bottom" constant="55.5" id="Irk-CS-uNb"/>
                             <constraint firstItem="7i4-R4-Rv1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="My9-GZ-k5e"/>
                             <constraint firstItem="XTb-Zq-8HL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="Tgc-Xk-X14"/>
-                            <constraint firstItem="sZQ-OD-oqQ" firstAttribute="top" secondItem="xce-AQ-w6r" secondAttribute="bottom" constant="170" id="UfV-ir-6c6"/>
                             <constraint firstItem="XTb-Zq-8HL" firstAttribute="leading" secondItem="7i4-R4-Rv1" secondAttribute="trailing" constant="50" id="WYG-id-cX4"/>
                             <constraint firstItem="sZQ-OD-oqQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="XoP-Xg-Vjh"/>
+                            <constraint firstItem="COg-PD-1Yr" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="d5o-Ks-WXu"/>
                             <constraint firstItem="XTb-Zq-8HL" firstAttribute="width" secondItem="7i4-R4-Rv1" secondAttribute="width" id="oz1-nc-aSM"/>
                             <constraint firstItem="xce-AQ-w6r" firstAttribute="top" secondItem="XTb-Zq-8HL" secondAttribute="bottom" constant="50" id="u9X-Ic-5dQ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xce-AQ-w6r" secondAttribute="trailing" id="vAl-ui-lYs"/>
@@ -101,6 +109,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="xce-AQ-w6r" id="Sze-mY-Cl9"/>
+                        <outlet property="message" destination="COg-PD-1Yr" id="Mv2-d2-5f0"/>
                         <outlet property="playerOne" destination="7i4-R4-Rv1" id="ECt-kP-k4O"/>
                         <outlet property="playerTwo" destination="XTb-Zq-8HL" id="FwO-7x-vMC"/>
                     </connections>
