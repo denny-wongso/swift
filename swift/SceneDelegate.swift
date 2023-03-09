@@ -22,9 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
 
-        let storyboard = UIStoryboard(name: "CVMain", bundle: nil)
+        let storyboard = UIStoryboard(name: "PMain", bundle: nil)
         
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "CVViewController")
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "PViewController")
 
         window?.rootViewController = initialViewController
         window?.makeKeyAndVisible()
