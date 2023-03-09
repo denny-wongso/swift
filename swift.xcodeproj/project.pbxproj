@@ -19,6 +19,8 @@
 		B03FFE2329549AF70089EF7F /* TodoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B03FFE2129549AF70089EF7F /* TodoList.xcdatamodeld */; };
 		B03FFE2B2955D89B0089EF7F /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FFE292955D89B0089EF7F /* NotificationViewController.swift */; };
 		B03FFE2E2955D9670089EF7F /* NMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03FFE2D2955D9670089EF7F /* NMain.storyboard */; };
+		B04F5EFB29BA3C2C0047725D /* PMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04F5EFA29BA3C2C0047725D /* PMain.storyboard */; };
+		B04F5EFD29BA3C540047725D /* PViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F5EFC29BA3C540047725D /* PViewController.swift */; };
 		B0797D7A2951B2B300FE9934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0797D792951B2B300FE9934 /* AppDelegate.swift */; };
 		B0797D7C2951B2B300FE9934 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0797D7B2951B2B300FE9934 /* SceneDelegate.swift */; };
 		B0797D832951B2B500FE9934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0797D822951B2B500FE9934 /* Assets.xcassets */; };
@@ -64,6 +66,8 @@
 		B03FFE2229549AF70089EF7F /* TodoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoList.xcdatamodel; sourceTree = "<group>"; };
 		B03FFE292955D89B0089EF7F /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		B03FFE2D2955D9670089EF7F /* NMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NMain.storyboard; sourceTree = "<group>"; };
+		B04F5EFA29BA3C2C0047725D /* PMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PMain.storyboard; sourceTree = "<group>"; };
+		B04F5EFC29BA3C540047725D /* PViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PViewController.swift; sourceTree = "<group>"; };
 		B0797D762951B2B300FE9934 /* swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0797D792951B2B300FE9934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0797D7B2951B2B300FE9934 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +159,15 @@
 			path = Notification;
 			sourceTree = "<group>";
 		};
+		B04F5EF929BA3BFD0047725D /* preprocessing */ = {
+			isa = PBXGroup;
+			children = (
+				B04F5EFA29BA3C2C0047725D /* PMain.storyboard */,
+				B04F5EFC29BA3C540047725D /* PViewController.swift */,
+			);
+			path = preprocessing;
+			sourceTree = "<group>";
+		};
 		B0797D6D2951B2B300FE9934 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +191,7 @@
 		B0797D782951B2B300FE9934 /* swift */ = {
 			isa = PBXGroup;
 			children = (
+				B04F5EF929BA3BFD0047725D /* preprocessing */,
 				B0FB1411295B393E004FAA60 /* CollectionView */,
 				B0FB14022959E66F004FAA60 /* Mvvm */,
 				B03FFE282955D7140089EF7F /* Notification */,
@@ -365,6 +379,7 @@
 				B03FFE1529531CB50089EF7F /* USMain.storyboard in Resources */,
 				B03FFE1C295498B90089EF7F /* CDMain.storyboard in Resources */,
 				B0797D832951B2B500FE9934 /* Assets.xcassets in Resources */,
+				B04F5EFB29BA3C2C0047725D /* PMain.storyboard in Resources */,
 				B03FFE122952050C0089EF7F /* spinnergif.gif in Resources */,
 				B03FFE0B2951C7200089EF7F /* Main.storyboard in Resources */,
 				B0FB1413295B394E004FAA60 /* CVMain.storyboard in Resources */,
@@ -399,6 +414,7 @@
 				B03FFE1E295498C60089EF7F /* CoreDataViewController.swift in Sources */,
 				B03FFE192953250A0089EF7F /* CurrentPrice.swift in Sources */,
 				B0FB14052959E68A004FAA60 /* Pet.swift in Sources */,
+				B04F5EFD29BA3C540047725D /* PViewController.swift in Sources */,
 				B03FFE2B2955D89B0089EF7F /* NotificationViewController.swift in Sources */,
 				B0FB140B2959E85F004FAA60 /* MViewController.swift in Sources */,
 				B03FFE2329549AF70089EF7F /* TodoList.xcdatamodeld in Sources */,
@@ -452,6 +468,130 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B04F5EFE29BA3D080047725D /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRODUCTION;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Production;
+		};
+		B04F5EFF29BA3D080047725D /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YJ4CD5JJ48;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = swift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denny.swift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Production;
+		};
+		B04F5F0029BA3D080047725D /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denny.swiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift.app/swift";
+			};
+			name = Production;
+		};
+		B04F5F0129BA3D080047725D /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denny.swiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = swift;
+			};
+			name = Production;
+		};
 		B0797D9E2951B2B500FE9934 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -701,6 +841,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0797D9E2951B2B500FE9934 /* Debug */,
+				B04F5EFE29BA3D080047725D /* Production */,
 				B0797D9F2951B2B500FE9934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -710,6 +851,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0797DA12951B2B500FE9934 /* Debug */,
+				B04F5EFF29BA3D080047725D /* Production */,
 				B0797DA22951B2B500FE9934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -719,6 +861,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0797DA42951B2B500FE9934 /* Debug */,
+				B04F5F0029BA3D080047725D /* Production */,
 				B0797DA52951B2B500FE9934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -728,6 +871,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0797DA72951B2B500FE9934 /* Debug */,
+				B04F5F0129BA3D080047725D /* Production */,
 				B0797DA82951B2B500FE9934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
